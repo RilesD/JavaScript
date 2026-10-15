@@ -1,0 +1,35 @@
+<!DOCTYPE.HTML>
+<html>
+  <head>
+    <title>My first JavaScript attempt</title>
+    <style>
+      html, body {
+        background-color: #000000;
+        color: #ffffff;
+        min-height: 100vh;
+      }
+        </style>
+    <script>
+
+         function calculate() {
+           let a=document.getElementById("num1").value;
+           let b=document.getElementById("num2").value;
+           let c = Number(a) + Number(b);
+           document.getElementById("rslt").innerHTML=c;
+
+         }
+      
+    </script>
+  </head>
+  <body>
+    <h2>My JavaScript Powered Single Function Calculator</h2>
+    <p>Value 1<input id="num1"><br>
+      Value 2<input id="num2">
+    <button onclick="calculate()">Calculate</button>
+    </p>
+    <p>
+      Result: <span id="rslt"></span>
+    </p>
+ 
+  </body>
+</html>
